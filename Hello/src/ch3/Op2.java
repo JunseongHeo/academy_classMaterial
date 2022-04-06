@@ -21,6 +21,10 @@ public class Op2 {
 		System.out.println("i-- :"+i--); // 7
 		System.out.println("--i :"+(--i)); // 5
 		
+		int df = 13;
+		int ef = 12;
+		System.out.println((df+ef)/2);
+		
 	}
 
 }
