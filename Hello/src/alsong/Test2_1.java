@@ -2,6 +2,8 @@
 
 package alsong;
 
+import java.util.Scanner;
+
 public class Test2_1 {
 
 	public static void main(String[] args) {
@@ -15,7 +17,6 @@ public class Test2_1 {
 		int b = 17;
 		System.out.println(a+b);
 		System.out.println(a-b);
-		
 		
 		
 	}
