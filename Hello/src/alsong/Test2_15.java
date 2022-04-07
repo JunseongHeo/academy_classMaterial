@@ -12,7 +12,7 @@ public class Test2_15 {
 		String address = scanner.nextLine();
 		System.out.println(address);
 		
-		//
+		
 	}
 
 }
