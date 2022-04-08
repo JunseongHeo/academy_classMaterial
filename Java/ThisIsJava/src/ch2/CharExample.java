@@ -7,7 +7,7 @@ public class CharExample {
 		char c2 = 65; // 10진수로 저장
 		char c3 = '\u0041'; // 16진수로 저장
 		char c4 = '가'; // 문자를 직접 저장
-	    char c5 = 44032; // 10진수로 저장
+		char c5 = 44032; // 10진수로 저장
 	    char c6 = '\uac00'; // 16진수로 저장
 	    		
 	    int uniCode = c1; // 유니코드 얻기
