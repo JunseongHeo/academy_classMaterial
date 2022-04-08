@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1"> <!--border로 표 경계선 생성-->
+        <thead> <!--표 제목 열-->
+            <tr> <!--table row 행--><!--th태그로도 쓸수있다. 자동으로 볼드체가 된다.-->
+                <th>이름</th> <th>성별</th> <td>주소</td> <td>회비</td><!--table data 셀-->
+            </tr>
+        </thead>
+        <tbody> <!-- 표 내용 열-->
+            <tr> <!--table row 행-->
+                <td>최진혁</td> <td>남</td> <td rowspan="2">청주</td> <td>500</td><!--table data 셀-->
+            </tr>
+            <tr> <!--table row 행-->
+                <td>최유빈</td> <td>여</td> <td>1500</td><!--table data 셀-->
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="3">표발</td> <td> 위치 상관없이 표 가장아래로 구현</td>
+        </tfoot>
+    </table>
+        
+
+</body>
+</html>

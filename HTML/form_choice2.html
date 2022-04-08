@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://localhost/check.php">
+        <P>
+            <h1>색상</h1>
+            <!-- 옛날 라디오버튼처럼 하나의 버튼만-->
+            <!-- 네임이 같은 것끼리 그루핑. 그루핑내에서는 배타적 선택-->
+            <input type="radio" name="color" value="black"> 검은색 
+            <input type="radio" name="color" value="red"> 붉은색 
+            <input type="radio" name="color" value="blue"> 파란색
+        </P>
+        <P>
+            <h1>사이즈(다중선택)</h1>
+            <input type="checkbox" name="size" value="95"> 95 
+            <input type="checkbox" name="size" value="100"> 100
+            <input type="checkbox" name="size" checked value="105"> 105 <!--디폴트 체크가능-->
+        </P>
+        <input type="submit">
+    </form>
+</body>
+</html>
