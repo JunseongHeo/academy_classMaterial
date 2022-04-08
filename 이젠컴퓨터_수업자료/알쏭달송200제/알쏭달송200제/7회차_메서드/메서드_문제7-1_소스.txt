@@ -1,0 +1,64 @@
+문제 7-1
+입력한 int형 정숫값이 음수이면 -1을, 0이면 0을, 양수이면 1을 반환하는 sign Of 메서드를 작성하자.
+//입력한 정수의 부호를 판정
+import java.util.Scanner;
+
+public class SignOf1 {
+	//-- n의 부호 판정 --//
+	static int signOf(int n) {
+		int sign = 0;
+		
+		if (n>0)
+			sign = 1;
+		else if (n<0)
+			sign = -1;
+		
+		return sign;	//sign 값 반환
+	}
+	
+	public static void main(String[] args) {
+		Scanner stdIn = new Scanner(System.in);
+		
+		System.out.print("정수 x: ");
+		int x = stdIn.nextInt();
+		
+		int s = signOf(x);
+		System.out.println("signOf(x)는 " +s + "입니다.");
+
+	}
+
+}
+*********************
+class SignOf2 {
+static int signOf(int n) {
+	if (n>0)
+		return 1;
+	else if (n<0)
+		return -1;
+	return 0;
+	}
+문제 7-2
+3개의 int형 인수 a, b, c 중 최솟값을 구하는 min 메서드를 작성하자.
+int min(int a, int b, int c)
+
+//3개의 정숫값에서 최솟값 구하기
+import java.util.Scanner;
+
+public class Min3 {
+	//-- a, b, c의 최솟값 반환--//
+	static int min(int a, int b, int c) {
+		int min = a;
+		if (b < min) min = b;
+		if (c < min) min = c;
+		return min;
+	}
+	
+	public static void main(String[] args) {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.print("정수 a: "); int a = stdIn.nextInt();
+		System.out.print("정수 b: "); int b = stdIn.nextInt();
+		System.out.print("정수 c: "); int c = stdIn.nextInt();
+		System.out.print("최솟값은 " + min(a, b, c) + "입니다.");
+		
+
+	}

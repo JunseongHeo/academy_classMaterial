@@ -1,0 +1,57 @@
+문제 3-5
+정숫값을 읽어 부호(양수/음수/0)를 판정하는 프로그램을 작성하자.
+
+// 읽은 정숫값의 부호(양수/음수/0)를 판정해서 표시
+import java.util.Scanner;
+
+public class Sign {
+
+	public static void main(String[] args) {
+		Scanner stdIn = new Scanner(System.in);
+		
+		System.out.println("정수값: ");
+		int n = stdIn.nextInt();
+		
+		if (n > 0)
+			System.out.println("값이 양수입니다.");
+		else if (n < 0)
+			System.out.println("값이 음수입니다.");
+		else
+			System.out.println("값이 0입니다.");
+	}
+
+}
+
+문제 3-21
+월을 1~12의 정숫값으로 읽어서 해당하는 계절을 표시하는 프로그램을 작성하자.
+//읽은 월의 계절을 표시
+import java.util.Scanner;
+
+public class Season {
+
+	public static void main(String[] args) {
+		Scanner stdIn = new Scanner(System.in);
+		
+		System.out.println("몇 월입니까?:");
+		int month = stdIn.nextInt();
+		
+		switch(month) {
+		case   3:
+		case   4:	
+		case   5: System.out.println("봄");	break;	
+		case   6:	
+		case   7:	
+		case   8:	System.out.println("여름");	break;
+		case   9:	
+		case  10:	
+		case  11: System.out.println("가을");	break;
+		case  12:
+		case   1:
+		case   2:  System.out.println("겨울");	break;	
+		default : System.out.println("그런 월은 없습니다.");	break;
+		}
+
+	}
+
+}
+
