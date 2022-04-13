@@ -19,12 +19,6 @@ public class Test4_18 {
 				count++;
 			}
 		}
-		
 		System.out.println("\n입력하신 숫자 "+number+"의 약수의 개수는 "+count+"개 입니다."); // 개수표시
-		
-		
-		
-		
 	}
-
 }
