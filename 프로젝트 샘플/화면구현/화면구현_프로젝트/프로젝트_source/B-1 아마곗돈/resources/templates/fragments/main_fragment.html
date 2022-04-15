@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="head">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{../css/main/style.css}">
+    <link rel="stylesheet" th:href="@{../css/main/default.css}">
+</head>
+
+<body>
+<div th:fragment="header">
+    <header>
+        <div class="top clear">
+            <h1><a th:href="@{/}"><img src="../img/main/original_logo.png"></a>
+                <a th:href="@{../sign/sign_in}"><button class="btn_login">로그인</button></a></h1>
+            <div>
+            <ul>
+                <li><a th:href="@{../sign/sign_check}">회원가입</a></li>
+                <li><a th:href="@{../account_depo_and_with}">입출금</a></li>
+                <li><a th:href="@{../get_mall/get_mall_home}">Get Mall</a></li>
+            </ul>
+            </div>
+        </div>
+        <hr size="10" align="center" width=90% noshade="noshade"></hr>
+    </header>
+</div>
+
+<div th:fragment="footer">
+    <footer class="main_footer">
+        <div>
+            <div class="top">
+                <a th:href="@{/}"><img src="../img/main/original_logo.png"></a>
+                <h2 class="hide">get bank 소개 및 약관</h2>
+                <ul>
+                    <li><a href="https://spot.wooribank.com/pot/Dream?withyou=bp">은행소개</a></li>
+                    <li><a href="https://spot.wooribank.com/pot/Dream?withyou=CQSCT0051">개인정보처리방침</a></li>
+                    <li><a href="https://spot.wooribank.com/pot/Dream?withyou=CQSCT0132">신용정보활용체제</a></li>
+                    <li><a href="https://spot.wooribank.com/pot/Dream?withyou=CQSCT0120">개인신용정보관리보호</a></li>
+                </ul>
+                <div>
+                    <ul>
+                        <li>패밀리 사이트 바로가기</li>
+                        <li><a href="https://www.wooribank.com/">우리은행</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btm">
+                <div>COPYRIGHTS GET BANK. ALL RIGHTS RESERVED.</div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

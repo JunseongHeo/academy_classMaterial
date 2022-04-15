@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:replace="fragments/main_fragment :: head">
+    <title>Get Bank 로그인</title>
+</head>
+<body>
+    <div th:replace="fragments/main_fragment :: header"></div>
+
+    <main class="login_page">
+        <h2 class="title">로그인</h2>
+            <form th:action="@{/sign/sign_in_post}" class="login_form" method="POST">
+                <input type="text" class="input_style" name="userid" placeholder="아이디" required>
+                <input type="password" class="input_style" nane="password" placeholder="비밀번호" required>
+                <button type="submit" class="login_btn">로그인</button>
+            </form>
+    </main>
+
+    <div th:replace="fragments/main_fragment :: footer"></div>
+
+</body>
+</html>

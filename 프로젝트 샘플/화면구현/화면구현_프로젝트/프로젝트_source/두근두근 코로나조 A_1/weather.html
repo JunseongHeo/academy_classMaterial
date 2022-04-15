@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="weather" href="weather.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <title>weather</title>
+</head>
+<body">
+    <body onload="time()">   
+      </body>
+      <table class="weather_table">
+        <caption><h3 class="title" style="color: whitesmoke;">현재 날씨</h3></caption>
+    <tr>
+        <th rowspan='6'><h5 class="icon"></h5></th>
+    </tr>
+    <tr>
+        <td align=center><h5 class="time" style="color: whitesmoke;">현재 시간: <span id="now"></h5></td>
+    </tr>
+    <tr>
+    <td align=center><h5 class="ctemp" style="color: whitesmoke;">현재 온도:</h5></td>
+    </tr>
+    <tr>
+    <td align=center><h5 class="lowctemp" style="color: whitesmoke;">최저 온도:</h5></td>
+    </tr>
+    <tr>
+    <td align=center><h5 class="higctemp" style="color: whitesmoke;">최고 온도:</h5></td>
+    </tr>
+    </table>
+    <script>
+    function time(){
+        var time= new Date(); //시간받기위해서 new date
+            document.getElementById("now").innerHTML=time.getHours()+"시"+time.getMinutes()+"분"+time.getSeconds()+"초";
+           setInterval("time()",1000);     //1초 지난후 time()실행
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script></script>
+    <script>
+       
+
+$.getJSON       //날씨 pai
+('http://api.openweathermap.org/data/2.5/weather?q=seoul&appid=d5948ec3ace590812f0049bbdb822c43&units=metric'
+, function(result){
+    $('.ctemp').append(result.main.temp);
+    $('.lowctemp').append(result.main.temp_min);
+    $('.higctemp').append(result.main.temp_max);
+    //result.weather[0].icon
+    var wiconUrl = '<img src="http://openweathermap.org/img/wn/'+   //아이콘 pai
+    result.weather[0].icon +'@2x.png" alt="'+ result.weather[0].desciption +'">'
+    $('.icon').html(wiconUrl);
+
+});
+
+    </script>
+</body>
+</html>

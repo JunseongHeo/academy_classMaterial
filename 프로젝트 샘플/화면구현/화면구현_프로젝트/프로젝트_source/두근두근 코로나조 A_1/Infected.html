@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <title>Infexted</title>
+    <script src="https://kit.fontawesome.com/c1598d8dd1.js" crossorigin="anonymous"></script>
+ <script src="main.js" defer></script>  
+</head>
+<body style="background-color: #f3eedc;">
+    <nav class="navbar">    <!--로고-->
+        <div class="navbar__Logo">
+            <i class="fas fa-syringe"></i>
+            <a href="index.html">COVID-19</a>
+        </div>
+
+        <ul class="navbar__menu">   <!--중간 메뉴-->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Login.html">LOGIN</a></li>
+          <li><a href="Store.html">Store</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="Reservation.html">Reservation</a></li>
+      </ul>
+
+        <ul class="navbar__icons">  <!--아이콘-->
+            <li><a href="Infected.html" class="fas fa-viruses"></a></li>     <!--바이러스-->
+            <li><a href="Vaccine.html" class="fas fa-shield-virus"></a></li>    <!--백신모양-->
+        </ul>
+
+        <a href="#" class="navbar__toogleBtn">  <!--우측 햄버거 모양-->
+        <i class="fas fa-bars"></i></a>
+    </nav>
+  <body>
+    <h1>감염자 현황</h1>
+    <h3 class="ID">감염자 번호 : </h3>
+    <h3 class="DATE">확진 날짜 :</h3>
+    <h3 class="AREA">거주지 : </h3>
+    <h3 class="HISTORY">접촉력 : </h3>
+    <h3 class="IDATE">등록일 : </h3>
+    <hr>
+    <h3 class="ID1">감염자 번호 : </h3>
+    <h3 class="DATE1">확진 날짜 :</h3>
+    <h3 class="AREA1">거주지 : </h3>
+    <h3 class="HISTORY1">접촉력 : </h3>
+    <h3 class="IDATE1">등록일 : </h3>
+    <hr>
+    <h3 class="ID2">감염자 번호 : </h3>
+    <h3 class="DATE2">확진 날짜 :</h3>
+    <h3 class="AREA2">거주지 : </h3>
+    <h3 class="HISTORY2">접촉력 : </h3>
+    <h3 class="IDATE2">등록일 : </h3>
+    <hr>
+    <h3 class="ID3">감염자 번호 : </h3>
+    <h3 class="DATE3">확진 날짜 :</h3>
+    <h3 class="AREA3">거주지 : </h3>
+    <h3 class="HISTORY3">접촉력 : </h3>
+    <h3 class="IDATE3">등록일 : </h3>
+    <hr>
+    <h3 class="ID4">감염자 번호 : </h3>
+    <h3 class="DATE4">확진 날짜 :</h3>
+    <h3 class="AREA4">거주지 : </h3>
+    <h3 class="HISTORY4">접촉력 : </h3>
+    <h3 class="IDATE4">등록일 : </h3>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $.getJSON(
+        "http://openapi.seoul.go.kr:8088/647361787663616e373953514c6f78/json/Corona19Status/1/5/",
+        function (result) {
+
+          $(".ID").append(result.Corona19Status.row[0].CORONA19_ID);
+          $(".DATE").append(result.Corona19Status.row[0].CORONA19_DATE);
+          $(".AREA").append(result.Corona19Status.row[0].CORONA19_AREA);
+          $(".HISTORY").append(result.Corona19Status.row[0].CORONA19_CONTACT_HISTORY);
+          $(".IDATE").append(result.Corona19Status.row[0].CORONA19_IDATE);
+
+          $(".ID1").append(result.Corona19Status.row[1].CORONA19_ID);
+          $(".DATE1").append(result.Corona19Status.row[1].CORONA19_DATE);
+          $(".AREA1").append(result.Corona19Status.row[1].CORONA19_AREA);
+          $(".HISTORY1").append(result.Corona19Status.row[1].CORONA19_CONTACT_HISTORY);
+          $(".IDATE1").append(result.Corona19Status.row[1].CORONA19_IDATE);
+
+          $(".ID2").append(result.Corona19Status.row[2].CORONA19_ID);
+          $(".DATE2").append(result.Corona19Status.row[2].CORONA19_DATE);
+          $(".AREA2").append(result.Corona19Status.row[2].CORONA19_AREA);
+          $(".HISTORY2").append(result.Corona19Status.row[2].CORONA19_CONTACT_HISTORY);
+          $(".IDATE2").append(result.Corona19Status.row[2].CORONA19_IDATE);
+
+          $(".ID3").append(result.Corona19Status.row[3].CORONA19_ID);
+          $(".DATE3").append(result.Corona19Status.row[3].CORONA19_DATE);
+          $(".AREA3").append(result.Corona19Status.row[3].CORONA19_AREA);
+          $(".HISTORY3").append(result.Corona19Status.row[3].CORONA19_CONTACT_HISTORY);
+          $(".IDATE3").append(result.Corona19Status.row[3].CORONA19_IDATE);
+
+          $(".ID4").append(result.Corona19Status.row[4].CORONA19_ID);
+          $(".DATE4").append(result.Corona19Status.row[4].CORONA19_DATE);
+          $(".AREA4").append(result.Corona19Status.row[4].CORONA19_AREA);
+          $(".HISTORY4").append(result.Corona19Status.row[4].CORONA19_CONTACT_HISTORY);
+          $(".IDATE4").append(result.Corona19Status.row[4].CORONA19_IDATE);
+          
+        }
+      );
+    </script>
+    </body>
+    <footer style="background-color: #263343;">
+        <iframe src="weather.html" style="width: 300px; height: 350px; border: none;"></iframe>
+        <iframe src="hospital.html" style="width: 67.5%; height: 350px; border: none; background-color: whitesmoke;"></iframe>
+        <iframe src="calendar.html" style="width: 300px; height: 350px; border: none;"></iframe>
+        </footer>
+  </html>

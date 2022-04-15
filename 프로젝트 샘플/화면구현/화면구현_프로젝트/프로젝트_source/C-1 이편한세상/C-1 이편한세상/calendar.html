@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>EXPERIENCE of PRIDE 이편한세상 | 분양캘린더</title>
+    <meta charset="utf-8">
+    <!-- 모든 디바이스에서 잘 보이도록 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/navigation02.css"><!--메뉴바-->
+    <link rel="stylesheet" href="styles/mystyle01.css"><!--전체스타일-->
+    <link rel="stylesheet" href="styles/loginCSS.css"><!--로그인스타일-->
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .box {
+        margin-left: auto;
+        margin-right: auto;
+        position:relative;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .box_01 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        position:relative;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        color: white;
+        font-weight: bold;
+        background-color: MediumSeaGreen;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+      }
+      .box_02 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        position:relative;
+        padding-bottom: 50px;
+      }
+      h1 {
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      table {
+        border-spacing: 30px;
+        width: 84%;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      td {
+        text-indent: 40px;
+        width: 33.3%;
+        font-size: 20px;
+        color: gray;
+        background-color: white;
+        vertical-align: top;
+        padding-top: 30px;
+        height: 380px;
+      }
+      hr {
+        width: 90%;
+        text-align: right;
+        margin-right:0;
+        color: gray;
+      }
+      .fsize {
+        font-size:45px;
+        font-weight: bold;
+
+      }
+      ul {
+        list-style-type:square;
+        color: MediumSeaGreen;
+        padding-left: 55px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .bgimg {
+        background-image: url('imgs/img_wind01.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-size: 100% 100%; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav"><!--navigation bar-->
+      <div class="dropdown">
+        <button class="dropbtn" style="padding:0 0;margin:0;">
+          <a href="apartmentMain02.html" style="padding:0 20px; margin:0;"><img src="imgs/img_logo08.png"; alt="home" ></a>
+        </button>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn" >브랜드</button>
+        <div class="dropdown-content">
+          <div class="row">
+            <div class="column">
+            </div>
+            <div class="column">
+              <a href="core_values_01.html">핵심가치</a>
+              <a href="BI.html">BI</a>
+            </div>
+            <div class="column">
+              <a href="calendar.html">분양캘린더</a>
+              <a href="Guide.html">청약가이드</a>
+            </div>
+            <div class="column">
+              <a href="customerInquiry02.html">고객문의</a>
+              <a href="calculator01.html">평형계산기</a>
+              <a href="map.html">오시는길</a>
+            </div>
+            <div class="column">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown">
+         <button class="dropbtn" >분양안내</button>
+         <div class="dropdown-content">
+           <div class="row">
+             <div class="column">
+             </div>
+             <div class="column">
+               <a href="core_values_01.html">핵심가치</a>
+               <a href="BI.html">BI</a>
+             </div>
+             <div class="column">
+               <a href="calendar.html">분양캘린더</a>
+               <a href="Guide.html">청약가이드</a>
+             </div>
+             <div class="column">
+               <a href="customerInquiry02.html">고객문의</a>
+               <a href="calculator01.html">평형계산기</a>
+               <a href="map.html">오시는길</a>
+             </div>
+             <div class="column">
+             </div>
+           </div>
+         </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">고객서비스</button>
+        <div class="dropdown-content">
+          <div class="row">
+            <div class="column">
+            </div>
+            <div class="column">
+              <a href="core_values_01.html">핵심가치</a>
+              <a href="BI.html">BI</a>
+            </div>
+            <div class="column">
+              <a href="calendar.html">분양캘린더</a>
+              <a href="Guide.html">청약가이드</a>
+            </div>
+            <div class="column">
+              <a href="customerInquiry02.html">고객문의</a>
+              <a href="calculator01.html">평형계산기</a>
+              <a href="map.html">오시는길</a>
+            </div>
+            <div class="column">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown" >
+        <button class="dropbtn" onclick="document.getElementById('id01').style.display='block'" >Login</button>
+      </div>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <div id="id01" class="modal"><!--longin container-->
+      <form class="modal-content animate" onsubmit="login()">
+        <div class="imgcontainer"><!--close button-->
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container"><!--ID, Password, Lonin button, remember me box-->
+          <label for="uname"><b>ID를 입력해주세요</b></label>
+          <input type="text" id="user-id" placeholder="Enter ID" name="uname" required>
+          <label for="psw"><b>비밀번호를 입력해주세요</b></label>
+          <input type="password" id="user-pass" placeholder="Enter Password" name="psw" required>
+          <button type="submit" class="loginbtn">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me?
+          </label>
+        </div>
+        <div class="container" style="background-color:#f1f1f1"><!--cancel button, forgotpassword box-->
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+    <script src="loginScript.js"></script><!--longin Script-->
+
+    <script>/*화면 줄었을때 목록 버튼 누르면 메뉴 보이게*/
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        /*값과 타입이 같으면 ture*/
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    <div class="box">
+      <h1>분양 캘린더</h1>
+      <p><center><b>이편한세상의 연간 분양 일정을 한눈에 확인하세요.</b></center></p>
+    </div>
+
+    <div class="bgimg">
+      <div class="box_01">
+        <p style="color:white;"><center>2021년 분양예정</center></p>
+      </div>
+
+      <div class="">
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+
+      <div>
+        <table class="center">
+          <tr>
+            <td><span class="fsize">01 </span> January <hr></td>
+            <td><span class="fsize">02 </span> February<hr></td>
+            <td><span class="fsize">03 </span> March<hr></td>
+          </tr>
+          <tr>
+            <td><span class="fsize">04 </span> April <hr></td>
+            <td><span class="fsize">05 </span> May<hr></td>
+            <td><span class="fsize" style="color:MediumSeaGreen">06 </span> <span style="color:black;">June<hr></span>
+              <ul>
+                <li style="text-indent:0px"><a href="#">이편한세상 원베일리</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><span class="fsize">07 </span> July <hr></td>
+            <td><span class="fsize">08 </span> August<hr></td>
+            <td><span class="fsize">09 </span> September<hr></td>
+          </tr>
+          <tr>
+            <td><span class="fsize">10 </span> October <hr></td>
+            <td><span class="fsize" style="color:MediumSeaGreen">11 </span> <span style="color:black;">November<hr></span>
+              <ul>
+                <li style="text-indent:0px"><a href="#">이편한세상 포레티지</a></li>
+              </ul>
+            </td>
+            <td><span class="fsize">12 </span> December<hr></td>
+          </tr>
+        </table>
+        <div class="box_02">
+          <ul style="color: white;">
+            <li>분양일정은 인·허가 과정에 따라 변경될 수 있습니다.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <footer>
+        <p></p>
+        <p>(주) E-PyeonHan World | 서울특별시 중랑구 418 EE타워 3층 | 대표이사 : ooo | 등록번호 : 100-10-100000 | Tel. <span style="color:yellow;">1111-1111</span> | Fax. 1577-0000</p>
+        <p></p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>EXPERIENCE of PRIDE 이편한세상 | BI</title>
+    <meta charset="utf-8">
+    <!-- 모든 디바이스에서 잘 보이도록 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/navigation02.css"><!--메뉴바-->
+    <link rel="stylesheet" href="styles/mystyle01.css"><!--전체스타일-->
+    <link rel="stylesheet" href="styles/loginCSS.css"><!--로그인스타일-->
+
+    <style>
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .box {
+        margin-left: auto;
+        margin-right: auto;
+        position:relative;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: WhiteSmoke;
+        /* border-bottom: 4px solid black; */
+      }
+      h1 {
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .box_01 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 1150px;
+        height: 600px;
+        position:relative;
+        color: white;
+        font-weight: bold;
+        background-image: url("imgs/img_leaf01.jpeg");
+        background-repeat: no-repeat,
+        background-size: cover;
+      }
+      .bg-text {
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+      }
+      .center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .p-text{
+        margin-left: auto;
+        margin-right: auto;
+        width: 1150px;
+        height: 100px;
+        padding-top: 15px;
+        text-align: left;
+        font-size: 14px;
+      }
+      table {
+        width: 1150px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="topnav" id="myTopnav"><!--navigation bar-->
+      <div class="dropdown">
+        <button class="dropbtn" style="padding:0 0;margin:0;">
+          <a href="apartmentMain02.html" style="padding:0 20px; margin:0;"><img src="imgs/img_logo08.png"; alt="home" ></a>
+        </button>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn" >브랜드</button>
+        <div class="dropdown-content">
+          <div class="row">
+            <div class="column">
+            </div>
+            <div class="column">
+              <a href="core_values_01.html">핵심가치</a>
+              <a href="BI.html">BI</a>
+            </div>
+            <div class="column">
+              <a href="calendar.html">분양캘린더</a>
+              <a href="Guide.html">청약가이드</a>
+            </div>
+            <div class="column">
+              <a href="customerInquiry02.html">고객문의</a>
+              <a href="calculator01.html">평형계산기</a>
+              <a href="map.html">오시는길</a>
+            </div>
+            <div class="column">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown">
+         <button class="dropbtn" >분양안내</button>
+         <div class="dropdown-content">
+           <div class="row">
+             <div class="column">
+             </div>
+             <div class="column">
+               <a href="core_values_01.html">핵심가치</a>
+               <a href="BI.html">BI</a>
+             </div>
+             <div class="column">
+               <a href="calendar.html">분양캘린더</a>
+               <a href="Guide.html">청약가이드</a>
+             </div>
+             <div class="column">
+               <a href="customerInquiry02.html">고객문의</a>
+               <a href="calculator01.html">평형계산기</a>
+               <a href="map.html">오시는길</a>
+             </div>
+             <div class="column">
+             </div>
+           </div>
+         </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">고객서비스</button>
+        <div class="dropdown-content">
+          <div class="row">
+            <div class="column">
+            </div>
+            <div class="column">
+              <a href="core_values_01.html">핵심가치</a>
+              <a href="BI.html">BI</a>
+            </div>
+            <div class="column">
+              <a href="calendar.html">분양캘린더</a>
+              <a href="Guide.html">청약가이드</a>
+            </div>
+            <div class="column">
+              <a href="customerInquiry02.html">고객문의</a>
+              <a href="calculator01.html">평형계산기</a>
+              <a href="map.html">오시는길</a>
+            </div>
+            <div class="column">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown" >
+        <button class="dropbtn" onclick="document.getElementById('id01').style.display='block'" >Login</button>
+      </div>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <div id="id01" class="modal"><!--longin container-->
+      <form class="modal-content animate" onsubmit="login()">
+        <div class="imgcontainer"><!--close button-->
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container"><!--ID, Password, Lonin button, remember me box-->
+          <label for="uname"><b>ID를 입력해주세요</b></label>
+          <input type="text" id="user-id" placeholder="Enter ID" name="uname" required>
+          <label for="psw"><b>비밀번호를 입력해주세요</b></label>
+          <input type="password" id="user-pass" placeholder="Enter Password" name="psw" required>
+          <button type="submit" class="loginbtn">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me?
+          </label>
+        </div>
+        <div class="container" style="background-color:#f1f1f1"><!--cancel button, forgotpassword box-->
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+    <script src="loginScript.js"></script><!--longin Script-->
+
+    <script>/*화면 줄었을때 목록 버튼 누르면 메뉴 보이게*/
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        /*값과 타입이 같으면 ture*/
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+
+    <div class="box">
+      <h1>BI</h1>
+      <p><center><b>남다른 자부심, 이편한세상의 브랜드 아이덴티티를 소개합니다.</b></center></p>
+    </div>
+    <br>
+    <br>
+
+    <div class="box_01">
+      <div class="bg-text">
+        <img src="imgs/img_logo04.png" alt="logo">
+        <p>이편한세상의 새로운 로고는 산들바람에 부드럽게 흔들리는 <br> 자연의 현상을 담았습니다.</p>
+      </div>
+    </div>
+
+    <div class="p-text">
+      <p>유연하고 세련된 자연의 형상에서 이편한세상을 떠올립니다. 단단하지만 산들바람에 자연스레 나부끼는 나뭇잎에서,
+        <br>기본기가 탄탄하지만 프리미엄을 더해 고급스러워진 이편한세상의 이미지를 담았습니다.</p>
+    </div>
+    <div class="">
+      <table class="center">
+        <tr>
+          <td>
+            <p style="font-size:20px;">Black is the New Green </p>
+            <p style="font-size:14px;">이편한세상은 Black is the New Green으로 더 깊은 차원의 프리미엄 아파트를 표현합니다.
+              <br>기존 이편한세상의 초록색 색상에 고급스러운 검은색 잉크 한 방울 떨어진듯한
+              <br>브리티시 그린 British Green은 따뜻한 코트, 캐시미어, 가죽 노트를 연상하게 합니다.</p>
+              <p style="font-size:14px;">이편한세상의 새로운 그린은 프리미엄을 대표하게 될 것입니다.</p>
+          </td>
+          <td><img src="imgs/img_color01.png" alt="color" style="float:right;"></td>
+        </tr>
+      </table>
+      <br><br><br><br>
+    </div>
+
+    <div class="footer">
+      <footer>
+        <p></p>
+        <p>(주) E-PyeonHan World | 서울특별시 중랑구 418 EE타워 3층 | 대표이사 : ooo | 등록번호 : 100-10-100000 | Tel. <span style="color:yellow;">1111-1111</span> | Fax. 1577-0000</p>
+        <p></p>
+      </footer>
+    </div>
+
+  </body>
+</html>

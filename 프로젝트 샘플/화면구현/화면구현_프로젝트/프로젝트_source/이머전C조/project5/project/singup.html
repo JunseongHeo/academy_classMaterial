@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style> body { min-height: 100vh; 
+         background: -webkit-gradient(linear, left bottom, right top, from(#92b5db), to(#1d466c));
+         background: -webkit-linear-gradient(bottom left, #92b5db 0%, #1d466c 100%); 
+         background: -moz-linear-gradient(bottom left, #92b5db 0%, #1d466c 100%); 
+         background: -o-linear-gradient(bottom left, #92b5db 0%, #1d466c 100%); 
+         background: linear-gradient(to top right, #92b5db 0%, #1d466c 100%); } .input-form { max-width: 680px; margin-top: 80px; padding: 32px; 
+         background: #fff; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15); -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15); box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15) }
+     </style>
+</head>
+<body>
+    
+    <!--네비바-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="wanted.html">동물 수배</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="wanted.html">전체</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dog.html">강아지</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cat.html">고양이</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ETC.html">기타</a>
+              </li>
+              <li class="nav-login">
+                <a class="nav-link" href="login.html">로그인</a>
+              </li>
+              <li class="nav-login">
+                <a class="nav-link" href="singup.html">회원가입
+                  <span class="sr-only">◀</span>
+                </a>
+              </li>
+              <li class="nav-login">
+                <a class="nav-link" href="게시글 작성.html">게시글 작성</a>
+              </li>
+              <li class="nav_cart">
+                <a class="nav-link" href="cart.html">장바구니</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container"> 
+      <div class="input-form-backgroud row"> 
+          <div class="input-form col-md-12 mx-auto"> 
+            <h4 class="mb-3">회원가입</h4> 
+            <form class="validation-form" novalidate> 
+                <div class="row"> 
+                    <div class="col-md-6 mb-3"> 
+                        <label for="ID">ID</label> 
+                        <input type="text" class="form-control" id="ID" placeholder="아이디를 입력하세요" value="" required> 
+                        <div class="invalid-feedback"> 아이디를 입력해주세요.. </div> 
+                    </div> 
+                    <div class="col-md-6 mb-3"> 
+                        <label for="password">password</label>
+                         <input type="text" class="form-control" id="password" placeholder="패스워드를 입력하세요" value="" required> 
+                         <div class="invalid-feedback"> 패스워드를 입력해주세요. </div>
+                         </div> 
+                        </div> 
+                        <div class="mb-3"> 
+                            <label for="email">이메일</label> 
+                            <input type="email" class="form-control" id="email" placeholder="이메일을 입력하세요" required> 
+                            <div class="invalid-feedback"> 이메일을 입력해주세요. </div> 
+                        </div> 
+                        <div class="mb-3"> 
+                            <label for="address">주소</label> 
+                            <input type="text" class="form-control" id="address" placeholder="주소를 입력하세요" required> 
+                            <div class="invalid-feedback"> 주소를 입력해주세요. </div> 
+                        </div> 
+                        <div class="mb-3"> 
+                            <label for="address2">상세주소<span class="text-muted">&nbsp;(필수 아님)</span></label> 
+                            <input type="text" class="form-control" id="address2" placeholder="상세주소를 입력해주세요."> </div> 
+                            <div class="row"> <div class="col-md-8 mb-3"> <label for="root">이용 목적</label> 
+                                <select class="custom-select d-block w-100" id="root"> 
+                                    <option value=""></option> <option>실종동물수배</option> <option>실종동물찾기</option> </select> 
+                                    <div class="invalid-feedback"> 이용 목적을 선택해주세요. </div> 
+                                </div> 
+                                <div class="col-md-4 mb-3"> <label for="name">이름</label> 
+                                    <input type="text" class="form-control" id="name" placeholder="" required> 
+                                    <div class="invalid-feedback"> 이름을 입력해주세요. </div> 
+                                </div> 
+                            </div> <hr class="mb-4"> 
+                            <div class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" id="aggrement" required> 
+                                <label class="custom-control-label" for="aggrement">개인정보 수집 및 이용에 동의합니다.</label> </div> 
+                                <div class="mb-4"></div> <button class="btn btn-primary btn-lg btn-block" type="submit">가입 완료</button> </form> </div> 
+                            </div> 
+                            <script> window.addEventListener('load', () => { const forms = document.getElementsByClassName('validation-form');
+                             Array.prototype.filter.call(forms, (form) => { form.addEventListener('submit', function (event) 
+                             { if (form.checkValidity() === false) { event.preventDefault(); event.stopPropagation(); } 
+                             form.classList.add('was-validated'); }, false); }); }, false); 
+                            </script>
+</body>
+</html>

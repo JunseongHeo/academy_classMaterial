@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title></title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $.getJSON(
+        "http://openapi.seoul.go.kr:8088/556d6a787063616e3131306651675858/json/tvCorona19VaccinestatNew/1/5/",
+        function (result) {
+          let dates = [];
+          let firsts = [];
+          let seconds = [];
+
+          for (r of result.tvCorona19VaccinestatNew.row) {
+            dates.push(r.S_VC_DT);
+            firsts.push(Number(r.FIR_INC_RATE));
+            seconds.push(Number(r.SCD_INC_RATE));
+          }
+          initChart(firsts.reverse(), seconds.reverse(), dates.reverse());
+        }
+      );
+
+      function initChart(firsts, seconds, dates) {
+        Highcharts.chart("container", {
+          title: {
+            text: "코로나 백신 접종 현황",
+          },
+
+          subtitle: {
+            text: "Source: data.seoul.go.kr",
+          },
+
+          yAxis: {
+            title: {
+              text: "접종률",
+            },
+          },
+
+          xAxis: {
+            categories: dates,
+          },
+
+          legend: {
+            layout: "vertical",
+            align: "right",
+            verticalAlign: "middle",
+          },
+
+          series: [
+            {
+              name: "1차 접종률",
+              data: firsts,
+            },
+            {
+              name: "2차 접종률",
+              data: seconds,
+            },
+          ],
+        });
+      }
+    </script>
+  </head>
+  <div id="container"></div>
+</html>

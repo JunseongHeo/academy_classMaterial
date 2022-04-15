@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="head">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{../css/get_Mall/style.css}">
+    <link rel="stylesheet" th:href="@{../css/main/default.css}">
+</head>
+
+<body>
+<div th:fragment="header">
+    <header>
+        <div class="top clear">
+            <h1><a th:href="@{../get_mall/get_mall_home}"><img src="../img/get_Mall/GetMall.png"></a>
+                <a th:href="@{../sign/sign_in}"><button class="btn_login">로그인</button></a></h1>
+            <div>
+            <ul>
+                <li><a th:href="@{/}">Get은행</a></li>
+                <li><a th:href="@{../get_mall/get_mall_regist}">물품등록</a></li>
+                <li><a th:href="@{../get_mall/get_mall_minigame}">포인트 미니게임</a></li>
+            </ul>
+            </div>
+        </div>
+        <hr size="2" align="center" width=90% noshade="noshade"></hr>
+    </header>
+</div>
+</body>
+</html>

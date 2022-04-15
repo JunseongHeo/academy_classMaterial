@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/get_mall_fragment :: head">
+</head>
+<body>
+    
+    <div th:replace="fragments/get_mall_fragment :: header"></div>
+    
+    <Section>
+        <h2 class="minigame_header">포인트 복불복</h2>
+        <p class="sum">포인트를 벌 수도, 잃을 수도 있습니다.</p>
+            <div class="item_box">
+                <div class="P-A">
+                    <img src="../img/get_Mall/background.png">
+                    <p class="minigame_pointA"></p>
+                    <input class="first" id="point" type="button" value="Click!" onclick="setValue.setPointA(this);
+                     setValue.setValues(this);
+                     ">
+                </div>
+                <div class="P-B">
+                    <img src="../img/get_Mall/background.png">
+                    <p class="minigame_pointB"></p>
+                    <input class="second" id="point" type="button" value="Click!" onclick="
+                    setValue.setPointB(this); setValue.setValues(this);
+                    ">
+                </div>
+                <div class="P-C">     
+                    <img src="../img/get_Mall/background.png">
+                    <p class="minigame_pointC"></p>
+                    <input class="third" id="point" type="button" value="Click!" onclick="
+                    setValue.setPointC(this); setValue.setValues(this);
+                    ">
+                </div>
+    </Section>
+    
+    
+    <div th:replace="fragments/main_fragment :: footer"></div>
+<script src="../js/minigame.js"></script>
+</body>
+</html>
+        
+
