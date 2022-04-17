@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/main_fragment :: head">
+    <title>Get Bank 회원가입</title>
+</head>
+<body>
+    <div th:replace="fragments/main_fragment :: header"></div>
+
+    <main class="contents">
+        <div class="join_wrap">
+        <h2 class="h2">회원가입</h2>
+        <ol class="step">
+        <li>STEP.01<div>약관동의</div></li>
+        <li class="second">STEP.02<div>정보입력</div></li>
+        <li>STEP.03<div>가입완료</div></li>
+        </ol>
+        
+        <form th:action="@{/sign/sign_up_post}" method="POST">
+ 
+            <fieldset>
+                <legend>가입 계좌 등록</legend>
+                <table class="table_type1">
+                    <caption>
+                        정보입력 표
+                        <div>
+                            이름, 계좌번호
+                        </div>
+                    </caption>
+                    <colgroup>
+                        <col style="width: 180px;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>ID</th>
+                            <td><input type="text" placeholder="아이디" required><button class="btn_login2">중복확인</button></td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2">PASSWORD</th>
+                            <td><input type="password" placeholder="비밀번호" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" placeholder="비밀번호 확인" required></td>
+                        </tr>
+                        <tr>
+                            <th>계좌명</th>
+                            <td><input type="text" placeholder="예)우리은행" required></td>
+                        </tr>
+                        <tr>
+                            <th>계좌번호</th>
+                            <td>
+                                <input type="text" placeholder="예)111-222-3333" required></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            <div class="daum">
+                <button class="btn_type2">등록하기</button>
+            </div>
+        </form>
+
+        </div>
+    </main>
+
+    <div th:replace="fragments/main_fragment :: footer"></div>
+
+</body>
+</html>

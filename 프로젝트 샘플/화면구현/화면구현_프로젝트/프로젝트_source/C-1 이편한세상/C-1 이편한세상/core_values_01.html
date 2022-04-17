@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>EXPERIENCE of PRIDE 이편한세상 | 핵심가치</title>
+    <meta charset="utf-8">
+    <!-- 모든 디바이스에서 잘 보이도록 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/navigation02.css"><!--메뉴바-->
+    <link rel="stylesheet" href="styles/mystyle01.css"><!--전체스타일-->
+    <link rel="stylesheet" href="styles/loginCSS.css"><!--로그인스타일-->
+
+    <style>
+      .box {
+        margin-left: auto;
+        margin-right: auto;
+        position:relative;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border:1px solid white;
+      }
+      h1 {
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body, html {
+        height: 140%;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      table {
+        border-spacing: 30px;
+      }
+      .center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .bg-image{
+        /* Full height */
+        height: 50%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      /* Images used */
+      .img1 { background-image: url("imgs/img_kitchen.jpeg"); }
+      .img2 { background-image: url("imgs/img_family.jpeg"); }
+      .img3 { background-image: url("imgs/img_kids.jpeg");}
+      .img4 { background-image: url("imgs/img_dandelion.jpeg"); }
+      .img5 { background-image: url("imgs/img_park.jpeg"); }
+      .img6 { background-image: url("imgs/img_woods.jpeg"); }
+
+      /* Position text in the middle of the page/image */
+      .bg-text{
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        font-size: 80px;
+        border: 10px solid #f1f1f1;
+        position: fixed;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 600px;
+        padding: 20px;
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="topnav" id="myTopnav"><!--navigation bar-->
+      <div class="dropdown">
+        <button class="dropbtn" style="padding:0 0;margin:0;">
+          <a href="apartmentMain02.html" style="padding:0 20px; margin:0;"><img src="imgs/img_logo08.png"; alt="home" ></a>
+        </button>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn" >브랜드</button>
+        <div class="dropdown-content">
+          <div class="row">
+            <div class="column">
+            </div>
+            <div class="column">
+              <a href="core_values_01.html">핵심가치</a>
+              <a href="BI.html">BI</a>
+            </div>
+            <div class="column">
+              <a href="calendar.html">분양캘린더</a>
+              <a href="Guide.html">청약가이드</a>
+            </div>
+            <div class="column">
+              <a href="#">고객문의</a>
+              <a href="#">평형계산기</a>
+              <a href="#">오시는길</a>
+            </div>
+            <div class="column">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown">
+         <button class="dropbtn" >분양안내</button>
+         <div class="dropdown-content">
+           <div class="row">
+             <div class="column">
+             </div>
+             <div class="column">
+               <a href="#">핵심가치</a>
+               <a href="#">BI</a>
+             </div>
+             <div class="column">
+               <a href="#">분양캘린더</a>
+               <a href="#">청약가이드</a>
+             </div>
+             <div class="column">
+               <a href="#">고객문의</a>
+               <a href="#">평형계산기</a>
+               <a href="#">오시는길</a>
+             </div>
+             <div class="column">
+             </div>
+           </div>
+         </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">고객서비스</button>
+        <div class="dropdown-content">
+          <div class="row">
+            <div class="column">
+            </div>
+            <div class="column">
+              <a href="#">핵심가치</a>
+              <a href="#">BI</a>
+            </div>
+            <div class="column">
+              <a href="#">분양캘린더</a>
+              <a href="#">청약가이드</a>
+            </div>
+            <div class="column">
+              <a href="#">고객문의</a>
+              <a href="#">평형계산기</a>
+              <a href="#">오시는길</a>
+            </div>
+            <div class="column">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown" >
+        <button class="dropbtn" onclick="document.getElementById('id01').style.display='block'" >Login</button>
+      </div>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <div id="id01" class="modal"><!--longin container-->
+      <form class="modal-content animate" onsubmit="login()">
+        <div class="imgcontainer"><!--close button-->
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container"><!--ID, Password, Lonin button, remember me box-->
+          <label for="uname"><b>ID를 입력해주세요</b></label>
+          <input type="text" id="user-id" placeholder="Enter ID" name="uname" required>
+          <label for="psw"><b>비밀번호를 입력해주세요</b></label>
+          <input type="password" id="user-pass" placeholder="Enter Password" name="psw" required>
+          <button type="submit" class="loginbtn">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me?
+          </label>
+        </div>
+        <div class="container" style="background-color:#f1f1f1"><!--cancel button, forgotpassword box-->
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+    <script src="loginScript.js"></script><!--longin Script-->
+
+    <script>/*화면 줄었을때 목록 버튼 누르면 메뉴 보이게*/
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        /*값과 타입이 같으면 ture*/
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    <div class="box">
+      <h1>핵심 가치</h1>
+    </div>
+    <div class="bg-image img1"></div>
+    <div class="bg-image img2"></div>
+    <div class="bg-text">FOR <br> EXCELLENT <br> LIFE </div>
+    <table class="center">
+      <tr>
+        <td style="font-size:25px;">Expert</td>
+        <td style="font-size:25px;">Smart</td>
+        <td style="font-size:25px;">Comfort</td>
+      </tr>
+      <tr>
+        <td style="font-size: 40px"><b>가장 전문적인</b></td>
+        <td style="font-size: 40px"><b>가장 스마트한</b></td>
+        <td style="font-size: 40px"><b>가장 편안한</b></td>
+      </tr>
+      <tr>
+        <td>고객이 경험하는 모든 부분에 있어 <br> 최고 전문가로서 최상의 기분을 제시합니다.</td>
+        <td>최상의 삶을 누릴 수 있도록 혁신과 변화의 <br> 과정을 통해 주거 신기술을 제공합니다.</td>
+        <td>이편한세상에서 누리는 모든 경험이 <br>가장 편하도록 제안합니다.</td>
+      </tr>
+    </table>
+    <div class="bg-image img3"></div>
+    <div class="bg-image img4"></div>
+    <table class="center">
+      <tr>
+        <td style="font-size:25px;">Designed</td>
+        <td style="font-size:25px;">Valuable</td>
+      </tr>
+      <tr>
+        <td style="font-size: 40px"><b>가장 매력적인</b></td>
+        <td style="font-size: 40px"><b>가장 가치있는</b></td>
+      </tr>
+      <tr>
+        <td>이편한세상의 모든 요소를 정교하고 섬세하게<br> 가장 매력적인 디자인으로 선보입니다.</td>
+        <td>대한민국 대표 아파트가 되기 위하여<br> 최고의 해법을 제시합니다.</td>
+      </tr>
+    </table>
+    <div class="bg-image img5"></div>
+    <div class="bg-image img6"></div>
+
+    <div class="footer">
+      <footer>
+        <p></p>
+        <p>(주) E-PyeonHan World | 서울특별시 중랑구 418 EE타워 3층 | 대표이사 : ooo | 등록번호 : 100-10-100000 | Tel. <span style="color:yellow;">1111-1111</span> | Fax. 1577-0000</p>
+        <p></p>
+      </footer>
+    </div>
+
+
+  </body>
+</html>

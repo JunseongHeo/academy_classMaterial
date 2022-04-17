@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/get_mall_fragment :: head">
+    <title>Get Mall</title>
+</head>
+<body>
+    
+    <div th:replace="fragments/get_mall_fragment :: header"></div>
+
+    <Section>
+        <div id="page">
+            <h2 id="post_title">물품 등록</h2>
+            <table id="product_post">
+                <tr>
+                    <th><label>물품명</label></th>
+                    <td><input type="text" id="product_name" placeholder="물품명을 입력해주세요"></td>
+                    <th><label>가격</label></th>
+                    <td><input type="text" id="product_price" placeholder="가격을 입력해주세요  "> 원</td>
+                </tr>
+                <tr>
+                    <th>상품 이미지</th>
+                    <td colspan="3">
+                        <input type="file" id="product_image" accept="image/*">
+                    </td>
+                </tr>
+                <tr>
+                    <th>카테고리</th>
+                    <td colspan="3">
+                        <span>의류<input type="checkbox"></span>
+                        <span>전자기기<input type="checkbox"></span>
+                        <span>유아<input type="checkbox"></span>
+                        <span>뷰티/미용<input type="checkbox"></span><br><br>
+                        <span>도서<input type="checkbox"></span>
+                        <span>스포츠/레저<input type="checkbox"></span>
+                        <span>생활<input type="checkbox"></span>
+                        <span>식품<input type="checkbox"></span><br><br>
+                        <span>가구<input type="checkbox"></span>
+                        <span>생활가전<input type="checkbox"></span>
+                    </td>
+                </tr>
+            </table>
+            <div id="button">
+                <input id="post" type="button" value="등록" onclick="alert('물품을 등록했습니다.'); location.href='get_mall_home';">
+                <input id="back" type="button" value="이전" onclick="location.href='get_mall_home';">
+            </div>
+        </div>
+    </Section>
+
+    
+    <div th:replace="fragments/main_fragment :: footer"></div>
+
+</body>
+</html>

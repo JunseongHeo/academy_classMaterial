@@ -1,0 +1,83 @@
+*{
+  box-sizing:border-box;
+}
+body{
+  font-family: Verdana, Helvetica, sans-serif;
+/*  background-image: url("apartment_image02.jpeg");*/
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:100% 100%;
+  padding
+}
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.box {
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border:1px solid white;
+}
+
+.rowM {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer{
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+
+.main{
+  flex: 85%;
+  /*width:85%;
+  height: 80%;*/
+  padding:20px 20px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.right{
+  background-color:#00ff0000;
+  flex: 15%;
+  /*width:15%;*/
+  height: 80%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+.top-left {
+  background-color: white;
+  color: black;
+  font-size: 2vw; /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  padding: 10px;
+  width: 50%;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 1%; /* Position text  */
+  left: 43%; /* Position text */
+  transform: translate(-95%, 50%); /* Position text  */
+  mix-blend-mode: darken; /* This makes the cutout text possible */
+}
+
+
+@media screen and (max-width:600px){
+  /*for mobile phones; */
+  .menu{
+    width:100%;
+  }
+  .main, .right{
+    flex: 100%;
+  }
+}

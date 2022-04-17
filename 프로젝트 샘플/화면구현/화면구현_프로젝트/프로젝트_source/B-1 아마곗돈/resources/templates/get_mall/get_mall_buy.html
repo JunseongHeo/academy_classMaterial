@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/get_mall_fragment :: head">
+    <title>Get Mall</title>
+</head>
+<body>
+    
+    <div th:replace="fragments/get_mall_fragment :: header"></div>
+
+    <h2 class="item_header">물품 구매</h2>
+    <div class="buy_item_box">
+        
+        <div class="products"><img src="../img/get_Mall/img_thoumb1.jpg" alt=""></div>
+        <table>
+            <tr class="buy_title">
+                <td>상품명</td>
+                <td>맥퀸뉴욕 세럼틴트</td>
+            </tr>
+            <tr class="buy_price">
+                <td>가격</td>
+                <td>6,900 Point</td>
+            </tr>
+        </table>
+    </div>
+    <div class="buy_btn_align">
+    <button class="buy_btn" onclick="buy_success()" >상품 구매</button>
+    </div>
+    <div th:replace="fragments/main_fragment :: footer"></div>
+
+</body>
+</html>
+
+<script>
+    function buy_success() {
+        alert("구매가 완료되었습니다.");
+        document.location.href="/get_mall/get_mall_home";
+    }
+</script>

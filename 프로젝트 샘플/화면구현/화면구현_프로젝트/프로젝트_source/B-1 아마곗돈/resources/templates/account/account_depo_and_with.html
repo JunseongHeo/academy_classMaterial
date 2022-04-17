@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/main_fragment :: head">
+    <title>Get Bank 입출금</title>
+</head>
+<body>
+    <div th:replace="fragments/main_fragment :: header"></div>
+
+    <main>
+        <div class=account>
+            <div class="acc_title">입금</div>
+            <div class="acc_add">
+                <form>
+                    <ul>
+                    <li>계좌명</li>
+                    <li><input class="input_money" placeholder="예)우리은행" type="text" /></li>
+                    <li>금액</li>
+                    <li><input class="input_money" placeholder="입금 할 금액을 입력해 주세요" type="text" /></li>
+                    <li><p>원</p></li>
+                    <li><button type="submit" class="btn_login2" onclick="showAlert(Depo);">입금진행</button></li>
+                    </ul>
+                </form>
+            </div>
+            <div class="acc_title">출금</div>
+            <div class="acc_add">
+                <form>
+                    <ul>
+                    <li>계좌명</li>
+                    <li><input class="input_money" placeholder="예)우리은행" type="text" /></li>
+                    <li>금액</li>
+                    <li><input class="input_money" placeholder="출금 할 금액을 입력해 주세요" type="text" /></li>
+                    <li><p>원</p></li>
+                    <li><button type="submit" class="btn_login2" onclick="showAlert(With);">출금진행</button></li>
+                    </ul>
+                </form>
+            </div>
+            <div class="acc_title">전계좌조회</div>
+            <div class="acc_add">
+                <table class="table_type2">
+                        <caption>전계좌조회</caption>
+                        <tr>
+                            <th scope="col">이름</th>
+                            <th scope="col">계좌번호</th>
+                            <th scope="col">잔액</th>
+                        </tr>
+                        <tr>
+                            <td>우리은행</td>
+                            <td>111-222222-33333</td>
+                            <td>100,000원</td>
+                        </tr>
+                        <tr>
+                            <td>신한은행</td>
+                            <td>222-33333-444444</td>
+                            <td>150,000원</td>
+                        </tr>
+                        <tr>
+                            <td>하나은행</td>
+                            <td>333-444444-5555</td>
+                            <td>200,000원</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                </table>
+                <table class="table_type2">
+                    <tr>
+                        <th colspan="2">Total (￦)</th>
+                        <td class="total">450,000</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Get Point</th>
+                        <td class="total">15,000</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <div th:replace="fragments/main_fragment :: footer"></div>
+
+</body>
+</html>
+
+<script>
+    var Depo = "입금";
+    var With = "출금";
+    function showAlert(params) {
+        alert(params+" 완료 되었습니다.")
+    }
+</script>

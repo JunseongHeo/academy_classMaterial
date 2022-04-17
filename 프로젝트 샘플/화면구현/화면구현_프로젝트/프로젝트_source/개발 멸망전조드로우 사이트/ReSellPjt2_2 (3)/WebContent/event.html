@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   	<title>이벤트</title>
+</head>
+<body>
+ <script>
+ var link = document.location.href.split("name=");
+ var success = link[1];
+ document.write(success.fontsize(20)+"<h1>님은 정상적으로 응모되었습니다.</h1>");
+
+ const random = Math.floor(Math.random()*100);
+
+ document.write("<h1>추첨 결과는...</h1>");
+ 
+function RanNum() { 
+
+	
+	if(random>=80){  //80이상일때 당첨.
+	 alert("당첨입니다. 축하합니다!!");
+	 
+ }else
+	 alert("꽝... 다음기회에");
+	
+}
+
+ </script>
+<form>
+	<input type="button" value="클릭" style="color: blue; font-size: 30px" onclick="RanNum()"><br><br>
+</form>
+	<button type="button" onclick="location.href='index.html'">홈으로</button>
+	<script src="assets/js/clock2.js"></script>
+</body>
+</html>

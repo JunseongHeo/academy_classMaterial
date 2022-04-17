@@ -1,0 +1,29 @@
+.boardwrite_table input, textarea, select{outline:0;}
+
+.boardwrite_table input[type=text], input[type=select], textarea, select{
+  border:1px solid #dedede;
+  border-radius: 5px;
+}
+
+.boardwrite_table th {
+  text-align : left;
+  background-color: #f2f2f2;
+  font-size: 13px;
+  width: 18%;
+}
+
+.boardwrite_table th, tr, td {
+  border-bottom: 1px solid #ddd;
+  height: 50px;
+}
+
+.boardwrite_table textarea{
+  width:60%;height:70px;
+  font-size: 11px;
+}
+
+.boardwrite_table{
+  
+  margin-left: auto;
+  margin-right: auto;
+}

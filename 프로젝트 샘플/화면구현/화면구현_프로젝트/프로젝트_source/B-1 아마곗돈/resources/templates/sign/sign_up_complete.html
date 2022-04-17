@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/main_fragment :: head">
+    <title>Get Bank 회원가입</title>
+</head>
+<body>
+    <div th:replace="fragments/main_fragment :: header"></div>
+
+    <main class="contents">
+        <div class="join_wrap">
+        <h2 class="h2">회원가입</h2>
+        <ol class="step">
+        <li>STEP.01<div>약관동의</div></li>
+        <li>STEP.02<div>정보입력</div></li>
+        <li class="third">STEP.03<div>가입완료</div></li>
+        </ol>
+        <div>
+            <p class="title">등록이 완료 되었습니다.</p>
+        </div>
+            <div class="daum">
+                <a th:href="@{/}" class="btn_type1">홈으로</a>
+            </div>
+        </div>
+    </main>
+
+    <div th:replace="fragments/main_fragment :: footer"></div>
+
+</body>
+</html>

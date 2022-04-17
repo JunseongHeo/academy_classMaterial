@@ -1,0 +1,227 @@
+/*header*/
+header { margin: 30px;}
+header .top { margin:0 auto; width: 1600px;}
+header .top h1 { float: left;}
+header .top h1 a:first-child {margin-right: 28px;}
+header .top > div { float: right; width: 500px;}
+header .top li { float: left; display: inline; line-height: 50px; margin-right: 15px; font-size: 16px;}
+.btn_login {display: inline-block; width: 70px; height: 30px; background: #288bcc; border-radius: 6px; color: white; font-size: 10pt; cursor: pointer;}
+
+/*footer*/
+footer.block > div {padding: 60px 0;}
+footer .top { display: flex; justify-content: space-around;}
+footer .top ul {display: inline-flex; padding: 10px 0 0 38px;}
+footer .top li {padding: 0 17px; position: relative; top: 20%; font-size: 14px;}
+footer .btm { display: flex; justify-content: space-around; padding: 20px 20px 30px;}
+.main_footer { position: relative; bottom: 0; width: 100%; background: #f6f6f6;}
+
+section .btm > div { margin:0 auto; width: 1000px;}
+section .btm .lnb li { float: left; list-style-type: none;}
+section .btm .lnb a { display: block; line-height: 59px; padding: 0 40px; color:#333; font-size: 22px;}
+
+/*슬라이드*/
+.visual {background: #e7f6f4;}
+.visual img{ height: 100%; margin-left: 460px;}
+
+/*main*/
+.service_box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+ }
+ .service_header {
+     margin: 30px 0;
+     margin-left: 462px;
+     color: black;
+     font-size: 22px;
+     font-weight: bold;
+ }
+ .service_title {
+     margin-bottom: 10px;
+     font-size: 19px;
+     font-weight: bold;
+     text-align: center;
+ }
+ .service_text {
+     font-size: 14px;
+     text-align: center;
+     color: #666;
+ }
+ .box {
+     border: 1px solid #d8d8d8;
+     height: 300px;
+ }
+ .box img {
+     margin-bottom: 10px;
+ }
+
+/*sign_check*/
+.join_wrap { margin: 0 auto; width: 1000px;}
+.join_wrap .step { display: flex; justify-content: space-around; align-items: center; margin: 30px 0 10px;
+height: 80px; border: 1px solid #bdbdbd;}
+.join_wrap .step li div { font-size: 18px; }
+.join_wrap .step .first { color: #288bcc; font-weight: 700; }
+.join_wrap .step .second { color: #288bcc; font-weight: 700; }
+.join_wrap .step .third { color: #288bcc; font-weight: 700; }
+
+.join_wrap .agree { overflow: auto; padding: 25px 30px; height: 100px; border: 1px solid #e3e3e3; font-size: 14px;}
+.join_wrap .agree h4 { font-size: 16px; color: #444;}
+.join_wrap .check { text-align: center; height: 30px; margin-top: 30px; font-size: 18px;}
+
+.h2 { line-height: 1; font-size: 32px; color:#333;}
+.h3 { padding: 35px 0 10px;  font-size: 19px; color:#333;}
+
+.daum {display: flex; justify-content: space-around; padding: 30px;}
+.btn_type1 { display: inline-block; width: 160px; background: #288bcc; border-radius: 6px; line-height: 60px; color: white; font-size: 17px; text-align: center;}
+
+.btn_type2 {
+    display: inline-block;
+    width: 160px;
+    border-radius: 6px;
+    font-size: 17px;
+    color: white;
+    background: #288bcc;
+    line-height: 60px; 
+    text-align: center;
+}
+
+
+/*sign_up*/
+fieldset {margin-top: 100px;}
+.step + form .table_type1 { margin-top: 10px;}
+
+.table_type1 { border-top: 10px solid #333333; border-bottom: 3px solid #c6c6c6;}
+.table_type1 tr ~ tr { border-top: 2px solid #eaeaea;}
+.table_type1 th { border-right: 2px solid #c6c6c6; font-size: 18px; color: #333; text-align: left; padding: 0 0 0 20px;}
+.table_type1 td { padding: 20px 20px;}
+input[type=submit] { background: #288bcc; color: white; font-size:17px; cursor: pointer;}
+button[type=submit] {cursor: pointer;}
+
+
+.btn_login2 {
+    margin-left: 30px;
+    display: inline-block; 
+    width: 70px; 
+    height: 30px; 
+    background: #288bcc; 
+    border-radius: 6px; 
+    color: white; 
+    font-size: 10pt;
+}
+
+/*account deposit and withdraw*/
+.account {
+    margin: 50px 300px 200px;
+}
+
+.acc_add {
+    border: 1px solid rgb(200, 200, 200);
+}
+
+
+.acc_title {
+    padding-left: 20px;
+    background-color: #288bcc;
+    font-weight: bold;
+    font-size: 15pt;
+    color: #eaeaea;
+    text-align: left;
+  }
+
+.account div ul {
+    padding: 30px 80px;
+}
+
+.account div li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+/*account check*/
+.table_type2 td, th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+    height: 20px;
+    text-align: center;
+}
+
+.table_type2 th[scope="col"] {
+    border: 1px solid rgb(190, 190, 190);
+    height: 30px;
+    background-color: #eaeaea;
+    color: black;
+    font-weight: bold;
+  }
+
+.table_type2 th[colspan] {
+    background-color: #eaeaea; 
+    color: black;
+    font-weight: bold;
+}
+
+.table_type2 caption {
+    padding: 10px;
+    caption-side: top;  
+    color: black;
+}
+
+.table_type2 {
+    table-layout: fixed;
+    margin: 40px 80px 40px;
+    border-collapse: collapse;
+    border: 1px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: 12pt;
+    width: 700px;
+}
+
+.total {
+    background-color: #eaeaea; 
+    color: black;
+    font-weight: bold;
+  }
+
+/*sign_in*/
+.title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    color: #000;
+    }
+
+.login_page {
+    width: 100%;
+    height: 100%;
+    margin-top: 140px;
+}
+
+.login_form {
+    margin: 0 auto;
+    width: 460px;
+}
+
+.input_style {
+    width: 100%;
+    padding: 15px 0 15px 15px;
+    margin-bottom: 13px;
+    font-weight: bold;
+}
+
+.login_btn {
+    width: 477px;
+    height: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    color: white;
+    background-color: #288bcc;
+    cursor: pointer;
+    display: block;
+}
+
+div p.title {font-size: 30pt; text-align: center; margin: 100px 100px;}
