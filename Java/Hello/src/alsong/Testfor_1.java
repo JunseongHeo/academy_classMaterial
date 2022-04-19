@@ -4,7 +4,7 @@
 
 package alsong;
 
-public class Test8_1 {
+public class Testfor_1 {
 
 	public static void main(String[] args) {
 		int n = 81;
