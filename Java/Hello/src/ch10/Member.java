@@ -10,28 +10,18 @@ public class Member {
 		System.out.println("tel : "+tel);
 		System.out.println("address : "+address);
 	}
-	
+	public void setInfo(String name, String tel, String address) { // 멤버변수 name의 setter로 클래스 밖에서 넣어준 파라메터 값을 name에 할당
+		this.name = name;
+		this.tel = tel;
+		this.address = address;
+	}
 	public String getName() { // 멤버변수 name의 getter로 클래스 밖에서 name값을 읽을 때 호출. 
 		return name;
 	}
-	
-	public void setName(String name) { // 멤버변수 name의 setter로 클래스 밖에서 넣어준 파라메터 값을 name에 할당
-		this.name = name;
-	}
-	
 	public String getTel() {
 		return tel;
 	}
-	public void setTel(String tel) {
-		this.tel = tel;
-	}
-	
 	public String getAddress() {
 		return address;
 	}
-	public void setAddress(String address) {
-		this.address = address;
-	}
-	
-	
 }
