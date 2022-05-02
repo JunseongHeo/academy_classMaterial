@@ -34,3 +34,21 @@ console.log(daysOfWeek[5]);
 // Add one more day to the array
 daysOfWeek.push("sun");
 console.log(daysOfWeek);
+
+// Objects 
+//객체의 속성을 표현하는 방법들... 
+const playerName = "junseong";
+const playerPoints = 121212;
+const playerHandsome = true;
+
+const playerArray = ["junseong", 121212, true];
+
+const player = {
+    name: "junseong",
+    points: 10,
+    fat: true,
+};
+
+console.log(player);
+console.log(player.name);
+
