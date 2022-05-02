@@ -50,5 +50,9 @@ const player = {
 };
 
 console.log(player);
-console.log(player.name);
+console.log(player.fat);
+
+player.fat = false;
+player.lastname = "kim";
+console.log(player);
 
