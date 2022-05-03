@@ -56,3 +56,6 @@ player.fat = false;
 player.lastname = "kim";
 console.log(player);
 
+// functions
+
+console.log("Hello my name is Junseong");
