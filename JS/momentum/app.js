@@ -59,3 +59,16 @@ console.log(player);
 // functions
 
 console.log("Hello my name is Junseong");
+console.log("Hello my name is JS");
+console.log("Hello my name is Jun");
+console.log("Hello my name is seong");
+
+function sayHello() {
+    console.log("Hello my name is ")
+}
+
+sayHello();
+sayHello();
+sayHello();
+sayHello();
+sayHello();
