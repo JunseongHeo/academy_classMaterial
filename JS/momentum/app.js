@@ -63,12 +63,28 @@ console.log("Hello my name is JS");
 console.log("Hello my name is Jun");
 console.log("Hello my name is seong");
 
-function sayHello() {
-    console.log("Hello my name is ")
+function sayHello(nameOfPerson) {
+    console.log("Hello my name is "+nameOfPerson)
 }
 
-sayHello();
-sayHello();
-sayHello();
-sayHello();
-sayHello();
+sayHello("Junseong");
+sayHello("dal");
+sayHello("nico");
+sayHello("lynn");
+
+const player2 = {
+    name : "junseong",
+    sayHello2 : function(yourName) {
+        console.log("hi "+yourName)
+    },
+};
+
+player2.sayHello2("jam")
+
+
+// calculator
+function plus(a, b) {
+    console.log(a+b);
+}
+
+plus(10,20);
