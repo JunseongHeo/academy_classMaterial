@@ -88,3 +88,32 @@ function plus(a, b) {
 }
 
 plus(10,20);
+
+// 실습예제
+
+console.log("실습예제");
+
+const calculator0 = {
+    add: function(a,b) {
+        console.log(a+b);
+    },
+    divide: function(a,b) {
+        console.log(a/b);
+    },
+    subtract: function(a,b) {
+        console.log(a-b);
+    },
+    multiple: function(a,b) {
+        console.log(a*b);
+    },
+    square: function(a,b) {
+        console.log(a**b);
+    }
+
+}; 
+
+calculator0.add(1,2);
+calculator0.divide(1,2);
+calculator0.subtract(1,2);
+calculator0.multiple(1,2);
+calculator0.square(2,2);
