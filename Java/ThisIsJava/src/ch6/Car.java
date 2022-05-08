@@ -9,7 +9,6 @@ public class Car {
 	
 	// »ý¼ºÀÚ
 	Car() {
-		
 	}
 	
 	Car(String model) {
@@ -25,5 +24,4 @@ public class Car {
 		this.color = color;
 		this.maxSpeed = maxSpeed; 
 	}
-	
 }
