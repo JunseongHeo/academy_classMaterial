@@ -135,3 +135,6 @@ calculator0.subtract(1,2);
 calculator0.multiple(1,2);
 calculator0.square(2,2);
 >>>>>>> ac5432b728bd9b5332aa2834375a0f49d1ce0aba
+
+
+
