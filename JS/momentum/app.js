@@ -143,3 +143,17 @@ function calculateKrAge (ageOfForeigner) {
 const KrAge = calculateKrAge(age);
 console.log(KrAge);
 
+// if
+
+const drinkAge = prompt ("how old are you?");
+
+console.log(isNaN(drinkAge));
+
+if(isNaN(drinkAge)) {  // 숫자가 아니면 true 반환, 숫자면 false 반환.
+    console.log("숫자를 입력해주세요");
+} else if (drinkAge >= 18) {
+    console.log("18세 이상 음주가능");
+} else {
+    console.log("음주 불가능한 연령입니다.");
+}
+
