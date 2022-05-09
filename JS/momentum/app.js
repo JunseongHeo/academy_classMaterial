@@ -1,6 +1,23 @@
-alert("hi");
+let a = 10; // 새로운 변수를 생성. 이후 변수값 바꿀수 있음.
+const b = 3; // constant 상수. 값이 바뀔수 없음
+const myName = "junseong"
+let myName2 = "junseong"
+var c = 10;
 
 
+<<<<<<< HEAD
+console.log(a+b);
+console.log(a*b);
+console.log(a/b);
+console.log("hello "+myName);
+console.log(c);
+
+a = 12;
+// myName = "Heojunseong"; // 에러. 상수값은 변경될수 없음.
+myName2= "Heojunseong"; // 변수값 변경
+
+console.log("hello "+myName2);
+=======
 // Boolean
 const amIFat0 = true; // definde 켜져있음 
 const amIFat = false; // definde 꺼져있음
@@ -117,3 +134,7 @@ calculator0.divide(1,2);
 calculator0.subtract(1,2);
 calculator0.multiple(1,2);
 calculator0.square(2,2);
+>>>>>>> ac5432b728bd9b5332aa2834375a0f49d1ce0aba
+
+
+
