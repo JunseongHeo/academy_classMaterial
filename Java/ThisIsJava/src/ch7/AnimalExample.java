@@ -23,7 +23,6 @@ public class AnimalExample {
 		animalSound(new Dog());
 		animalSound(new Cat());
 	}
-	
 	public static void animalSound(Animal animal) {
 		animal.sound();
 	}
