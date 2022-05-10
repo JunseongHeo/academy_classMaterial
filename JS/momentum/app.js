@@ -157,3 +157,6 @@ if(isNaN(drinkAge)) {  // 숫자가 아니면 true 반환, 숫자면 false 반�
     console.log("음주 불가능한 연령입니다.");
 }
 
+// document
+
+document.title = "자바스크립트 끝내자";
