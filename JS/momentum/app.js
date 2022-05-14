@@ -5,7 +5,6 @@ let myName2 = "junseong"
 var c = 10;
 
 
-<<<<<<< HEAD
 console.log(a+b);
 console.log(a*b);
 console.log(a/b);
@@ -17,7 +16,7 @@ a = 12;
 myName2= "Heojunseong"; // 변수값 변경
 
 console.log("hello "+myName2);
-=======
+
 // Boolean
 const amIFat0 = true; // definde 켜져있음 
 const amIFat = false; // definde 꺼져있음
@@ -134,7 +133,6 @@ calculator0.divide(1,2);
 calculator0.subtract(1,2);
 calculator0.multiple(1,2);
 calculator0.square(2,2);
->>>>>>> ac5432b728bd9b5332aa2834375a0f49d1ce0aba
 
 
 
