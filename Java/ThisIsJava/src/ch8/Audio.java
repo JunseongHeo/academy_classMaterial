@@ -36,5 +36,4 @@ public class Audio implements RemoteControl {
 			System.out.println("Audio 무음 해제 합니다.");
 		}
 	}
-	
 }
