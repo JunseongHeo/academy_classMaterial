@@ -6,5 +6,4 @@ public class NullPointExceptionExample {
 		String data = null;
 		System.out.println(data.toString());
 	}
-
 }
