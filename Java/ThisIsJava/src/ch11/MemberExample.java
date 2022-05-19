@@ -1,7 +1,6 @@
 package ch11;
 
 public class MemberExample {
-
 	public static void main(String[] args) {
 		Member obj1 = new Member("blue");
 		Member obj2 = new Member("blue");
