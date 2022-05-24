@@ -24,5 +24,4 @@ public class HashCodeExample {
 			return Objects.hash(sno, name);
 		}
 	}
-
 }

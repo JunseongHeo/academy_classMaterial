@@ -12,5 +12,4 @@ public class ToStringExample2 {
 		System.out.println(Objects.toString(str2));
 		System.out.println(Objects.toString(str2, "이름이 없습니다."));
 	}
-
 }
