@@ -1,0 +1,6 @@
+1_자바 JDK 다운로드
+2_자바 JDK 설치
+3_JDK Path를 지정
+4_이클립스 다운로드
+5_이클립스 설치(enterprise 설치)
+6_java Project "study" 생성
