@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "돋움";
+            font-size: 12px;
+            color: #444444;
+            list-style: none;
+        }
+        #login_title {
+            width: 585px;
+            padding: 10px;
+            margin: 50px;
+            font-size: 50px;
+            border: solid 5px #e6e2d7;
+        }
+        #login_box {
+            width: 610px;
+            height: 283px;
+            margin: 20px 0 0 50px;
+            border: solid 2px #cccccc;
+            border-radius: 20px;
+        }
+        #member_login {
+            margin: 15px;
+        }
+        #login {
+            width: 100%;
+            height: 60%;
+            float: left;
+            background-color: blue;
+        }
+        #left {
+            width: 40%;
+            height: 100%;
+            background-color: red;
+            float: left;
+            text-align: center;
+        }  
+        #key {
+            width: 70%;
+        } 
+        #right {
+            width: 60%;
+            height: 100%;
+            background-color: green;
+            float: right;
+        }
+        #login_btn {
+            width: 50%;
+        }
+        
+    </style>
+<body>
+    <h2 id="login_title">로그인</h2>
+    <div id="login_box">
+        <img id="member_login" src="./image/미니프로젝트12_멤버로그인.png" alt="멤버로그인">
+        <ul id="login">
+            <li id="left">
+                <img id="key" src="./image/미니프로젝트12_자물쇠열쇠.png" alt="열쇠">
+            </li> <!--left-->
+            <li id="right">
+                <ul id="input_button">
+                    <li id="id_pass">
+                        <ul>
+                            <li>
+                                <span>아 이 디</span>
+                                <input type="text">
+                            </li> <!--아이디-->
+                            <li id="pass">
+                                <span>비밀번호</span>
+                                <input type="password">
+                            </li> <!--패스워드-->
+                        </ul>
+                    </li> <!--아이디와 패스워드-->
+                    <li id="login_btn">
+                        <img src="./image/미니프로젝트12_로그인버튼.png" alt="로그인버튼">
+                    </li>
+                </ul> <!--input_button-->
+
+                <div id="auto_login"> 
+                    <input type="checkbox"> 자동 로그인    
+                </div>
+
+                <ul id="join_find">
+                    <li>아직 회원이 아니세요?</li>
+                    <li>아이디 또는 비밀번호를 잊으셨나요?</li>
+                </ul>
+            </li><!--right-->
+        </ul><!--login-->
+    </div><!--login_box-->
+
+</body>
+</html>
