@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getGrade() { // 함수정의
+            var kor = 95; // 지역변수
+            document.write("지역변수 국어점수 : " + kor + "<br>")
+        }
+        var kor = 100; // 전역변수
+        getGrade(); // 함수호출
+        document.write("전역변수 국어점수 : " + kor + "<br>")
+    </script>
+</body>
+</html>
