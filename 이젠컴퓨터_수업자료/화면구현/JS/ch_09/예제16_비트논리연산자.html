@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = 5; // 0101
+        var y = 7; // 0111
+        var result = (x & y); // 비트곱 0101
+        document.write("(x & 10) = "  + result + "<br>"); 
+        var result = (x | y); // 비트합 0111
+        document.write("(x | y) = "  + result + "<br>"); 
+        var result = (x ^ y); // 배타적 비트합 0010
+        document.write("(x ^ y) = "  + result + "<br>"); 
+        var result = (~x); // 비트부정 보수개념. 10진법으로 -(x+1)
+        document.write("~x = "  + result + "<br>"); 
+    </script>
+</body>
+</html>
